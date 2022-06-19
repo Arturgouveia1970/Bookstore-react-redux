@@ -19,9 +19,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 👤 **Artur Gouveia**
 
-- GitHub: @Arturgouveia1970
+- GitHub: (@Arturgouveia1970)
 - Twitter: @Arturgouveia10
-- LinkedIn: artur-gouveia-323868197
+- LinkedIn: (https://www.linkedin.com/in/artur-gouveia-323868197/)
 
 ## Live Demo
 - [heroku](https://bookstore-artur.herokuapp.com/)
