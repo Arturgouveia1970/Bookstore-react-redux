@@ -24,7 +24,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - LinkedIn: artur-gouveia-323868197
 
 ## Live Demo
-[]()
+[heroku](https://bookstore-artur.herokuapp.com/)
+[netlify](https://bookstore-artur.netlify.app/)
    
 ## Getting Started
 
