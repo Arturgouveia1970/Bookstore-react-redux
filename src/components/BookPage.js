@@ -11,6 +11,12 @@ const BookPage = () => {
       category: 'Health',
       id: uuidv4(),
     },
+    {
+      booktitle: 'The Godfather',
+      author: ' Mario Puzzo',
+      category: 'Crime',
+      id: uuidv4(),
+    },
   ];
   return (
     <div className="books">
