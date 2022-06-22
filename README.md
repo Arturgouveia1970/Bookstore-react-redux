@@ -3,7 +3,7 @@
 # The Bookstore
 
 > A single page bookstore application where the user
-> can add and delete books!
+> can add and delete books from an API!
 
 ## Built With
 
