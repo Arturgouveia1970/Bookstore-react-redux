@@ -1,17 +1,10 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { useSelector } from 'react-redux';
 import AddNewBook from './NewBook';
 import Books from './Books';
 
 const BookPage = () => {
-  const bookList = [
-    {
-      booktitle: ' 10 Hour Diet',
-      author: ' Jeannete Hyde',
-      category: 'Health',
-      id: uuidv4(),
-    },
-  ];
+  const bookList = useSelector((state) => state.bookReducer);
   return (
     <div className="books">
       <Books bookList={bookList} />
