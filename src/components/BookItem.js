@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { deleteBook } from '../redux/books/books':
+import { deleteBook } from '../redux/books/books';
 
 const BookItem = ({ book }) => {
   const {
@@ -27,13 +27,13 @@ const BookItem = ({ book }) => {
         {' '}
         {category}
       </p>
-      <button type='button' onClick={HandleRemove}>
+      <button type="button" onClick={HandleRemove}>
         Remove
       </button>
     </li>
   );
 };
-    
+
 BookItem.propTypes = {
   book: PropTypes.shape({
     booktitle: PropTypes.string.isRequired,
