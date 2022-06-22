@@ -14,7 +14,7 @@ const Books = () => {
   return (
     <ul className="books-list-section">
       {bookList
-        ? bookList.map((book) => <BookItem key={book.id} boo={book} />)
+        ? bookList.map((book) => <BookItem key={book.id} book={book} />)
         : 'Loading...'}
     </ul>
   );
