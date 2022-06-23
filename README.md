@@ -19,8 +19,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 👤 **Artur Gouveia**
 
-- GitHub: (@Arturgouveia1970)
-- Twitter: @Arturgouveia10
+- [GitHub](https://github.com/Arturgouveia1970)
+- [Twitter](https://twitter.com/twitterhandle)
 - [LinkedIn](https://www.linkedin.com/in/artur-gouveia-323868197/)
 
 ## Live Demo
