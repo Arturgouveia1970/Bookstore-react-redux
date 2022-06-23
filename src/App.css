@@ -168,7 +168,7 @@ body {
 
 .title {
   font-family: RobotoSlab, sans-serif;
-  font-size: 4.375rem;
+  font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: -0.2px;
   color: #121212;
@@ -185,7 +185,7 @@ body {
 
 .firstCol-btns button {
   font-family: RobotoSlab, sans-serif;
-  font-size: 00.875rem;
+  font-size: 0.875rem;
   font-weight: 300;
   background: transparent;
   border: none;
