@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { deleteBook } from '../redux/books/books';
 
 const BookItem = ({ book }) => {
@@ -8,28 +10,54 @@ const BookItem = ({ book }) => {
     title, author, id, category,
   } = book;
   const dispatch = useDispatch();
+
   const HandleRemove = () => {
     dispatch(deleteBook(id));
   };
 
+  const chapterVal = Math.round(Math.random() * 10);
+
   return (
-    <li key={id}>
-      <p>
-        Book:
-        {title}
-      </p>
-      <p>
-        Author:
-        {author}
-      </p>
-      <p>
-        Category:
-        {' '}
-        {category}
-      </p>
-      <button type="button" onClick={HandleRemove}>
-        Remove
-      </button>
+    <li key={id} className="d_flex">
+      <div className="firstCol">
+        <p className="category">{category}</p>
+        <p className="title">{title}</p>
+        <p className="Author" required>
+          {author}
+        </p>
+        <div className="firstCol-btns">
+          <button type="button">Comment</button>
+          <button type="button" onClick={HandleRemove}>
+            Remove
+          </button>
+          <button type="button">Edit</button>
+        </div>
+      </div>
+      <ul className="secondCol d_flex">
+        <li>
+          <div style={{ width: 90, height: 90 }}>
+            <CircularProgressbar value={Math.round((chapterVal / 10) * 100)} />
+          </div>
+        </li>
+        <li>
+          <p className="percentageVal">
+            {Math.round((chapterVal / 10) * 100)}
+            %
+          </p>
+          <p className="completed">completed</p>
+        </li>
+        <li>
+          <div className="lastCol">
+            <p className="currChapter">CURRENT CHAPTER</p>
+            <p id="chapter">
+              Chapter
+              {' '}
+              {chapterVal}
+            </p>
+            <button type="button">UPDATE PROGRESS</button>
+          </div>
+        </li>
+      </ul>
     </li>
   );
 };
@@ -37,8 +65,8 @@ const BookItem = ({ book }) => {
 BookItem.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
 };
