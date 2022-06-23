@@ -57,7 +57,7 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  margin:10px 0;
+  margin: 10px 0;
   padding: 1rem;
   border-radius: 8px;
   background: #fff;
@@ -184,7 +184,7 @@ body {
   margin: 0 0 1rem 0;
 }
 
- .firstCol .firstCol-btns button {
+.firstCol .firstCol-btns button {
   font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -281,6 +281,3 @@ option:first-child {
   border-radius: 15px;
   width: 40%;
 }
-
-
-
