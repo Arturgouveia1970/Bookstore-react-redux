@@ -48,6 +48,7 @@ body {
 }
 
 .book-list-section {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -56,9 +57,9 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  margin: 10px 0;
+  margin:10px 0;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   background: #fff;
   border: 1px solid #e8e8e8;
 }
@@ -177,13 +178,13 @@ body {
 
 .Author {
   font-family: RobotoSlab, sans-serif;
-  font-size: 00.875rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
   margin: 0 0 1rem 0;
 }
 
-.firstCol-btns button {
+ .firstCol .firstCol-btns button {
   font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;

@@ -19,13 +19,13 @@ const BookItem = ({ book }) => {
 
   return (
     <li key={id} className="d_flex">
-      <div className="firsCol">
+      <div className="firstCol">
         <p className="category">{category}</p>
         <p className="title">{title}</p>
         <p className="Author" required>
           {author}
         </p>
-        <div className="firsCol-btns">
+        <div className="firstCol-btns">
           <button type="button">Comment</button>
           <button type="button" onClick={HandleRemove}>
             Remove
@@ -35,7 +35,7 @@ const BookItem = ({ book }) => {
       </div>
       <ul className="secondCol d_flex">
         <li>
-          <div style={{ width: 100, height: 100 }}>
+          <div style={{ width: 90, height: 90 }}>
             <CircularProgressbar value={Math.round((chapterVal / 10) * 100)} />
           </div>
         </li>
