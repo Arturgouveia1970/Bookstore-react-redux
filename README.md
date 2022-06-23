@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 👤 **Artur Gouveia**
 
 - [GitHub](https://github.com/Arturgouveia1970)
-- [Twitter][@ArturGouveia10](https://twitter.com/@arturgouveia10)
+- [Twitter](https://twitter.com/@arturgouveia10)
 - [LinkedIn](https://www.linkedin.com/in/artur-gouveia-323868197/)
 
 ## Live Demo
